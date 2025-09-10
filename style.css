@@ -1,0 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI',  sans-serif;
+}
+body{
+  background: linear-gradient(135deg, #186070,#064757);
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; 
+  overflow: hidden;
+  text-align: center;
+}
+#start-btn, #tryAgain{
+  margin: 20px 0;
+  padding: 8px 30px;
+  border: 1px solid #Fff;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #Fff;
+  font-size: 16px;
+  background: transparent;
+  font-weight: 600;
+  transition:  background 0.4s ;
+}
+#start-btn:hover, #tryAgain:hover{
+  background: #fff;
+  color: #064757;
+  border: 1px solid #128fac;
+}
+#countdown{
+  font-size: 80px;
+  margin-top: 20px;
+  font-weight: 500;
+  animation: pop 0.5s ease-in-out;
+}
+@keyframes pop{
+  0%{
+    transform: scale(0);
+    opacity: 0;
+  }
+  50%{
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+#shape{
+  font-size: 40px;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+#reactTime{
+  font-size: 22px;
+}
+
